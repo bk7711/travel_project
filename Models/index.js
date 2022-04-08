@@ -1,6 +1,7 @@
 // import all models
 const User = require("./User");
 // create associations
+const Location = require("./Locations");
 
 // user has ...
 
@@ -8,6 +9,6 @@ const User = require("./User");
 
 // User belongsToMany
 
-// 
+//
 
-module.exports = { User };
+module.exports = { User, Location };
