@@ -1,22 +1,42 @@
 const router = require("express").Router();
-const { Locations } = require("../../models");
+const { Location } = require("../../models");
 
 // see locations
 
-router.get("/locations", (req, res) => {
-  Locations.findall({
-    include: [
-      {
-        model: Hotels,
-        attributes: [""],
-      },
-    ],
-  })
+router.get("/", (req, res) => {
+  Location
+    .findAll
+    //   {
+    //   include: [
+    //     {
+    //       model: Hotels,
+    //       attributes: [""],
+    //     },
+    //   ],
+    // }
+    ()
     .then((dbLocationData) => res.json(dbLocationData))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+router.post("/", async (req, res) => {
+  try {
+    const dbLocationData = await Location.create({
+      name: req.body.name,
+    });
+
+    // req.session.save(() => {
+    //   req.session.loggedIn = true;
+
+    res.status(200).json(dbLocationData);
+    // });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
