@@ -16,6 +16,7 @@ router.get("/", (req, res) => {
     // }
     ()
     .then((dbLocationData) => res.json(dbLocationData))
+    //try return object
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
