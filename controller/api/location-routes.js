@@ -1,18 +1,18 @@
 const router = require("express").Router();
-const { Locations } = require("../../models");
+const { Location } = require("../../models");
 
 // see locations
 
 router.get("/locations", (req, res) => {
-  Locations.findall({
+  Location.findAll({
     include: [
       {
         model: Hotels,
-        attributes: [""],
       },
     ],
   })
     .then((dbLocationData) => res.json(dbLocationData))
+    //try return object
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
