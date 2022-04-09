@@ -16,7 +16,8 @@ Hotel.init(
       allowNull: false,
     },
     city: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false
     }
   },
 
