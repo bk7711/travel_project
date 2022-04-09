@@ -16,8 +16,19 @@ Comment.init(
       allowNull: false,
     },
     user_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+      type: DataTypes.INTEGER,
+      references: {
+        model: "user",
+        key: "id",
+      },
+    },
+    // trip_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "trip",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize,

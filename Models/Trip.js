@@ -13,23 +13,38 @@ Trip.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      references: {
+        model: "user",
+        key: "id",
+      },
     },
     location_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      references: {
+        model: "location",
+        key: "id",
+      },
     },
     restaurant_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      references: {
+        model: "restaurant",
+        key: "id",
+      },
     },
     hotel_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      references: {
+        model: "hotel",
+        key: "id",
+      },
     },
     comment_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      references: {
+        model: "comment",
+        key: "id",
+      },
     },
   },
 

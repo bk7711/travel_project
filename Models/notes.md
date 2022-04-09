@@ -9,7 +9,7 @@
 
 # Associations
 
-- trip
+- trip (joining table)
   - hotel id
   - location id
   - restaurant id

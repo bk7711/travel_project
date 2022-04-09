@@ -17,8 +17,22 @@ Hotel.init(
     },
     city: {
       type: DataTypes.STRING,
-      allowNull: false
-    }
+      allowNull: false,
+    },
+    location_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "location",
+        key: "id",
+      },
+    },
+    // trip_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "trip",
+    //     key: "id",
+    //   },
+    // },
   },
 
   {
