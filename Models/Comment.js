@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Location extends Model {}
+class Comment extends Model {}
 
-Location.init(
+Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,22 +11,21 @@ Location.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    city: {
-      type: DataTypes.STRING,
+    comment_text: {
+      type: DataTypes.TEXT,
       allowNull: false,
     },
-    country: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    user_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "location",
+    modelName: "comment",
   }
 );
 
-module.exports = Location;
+module.exports = Comment;
