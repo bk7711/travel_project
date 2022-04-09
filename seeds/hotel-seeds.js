@@ -1,65 +1,65 @@
 const { Hotel } = require("../models");
 
 const hoteldata = [
-  // Balian resort  
+  // Balian resort
   {
     id: 1,
     name: "Natya Resort Ubud",
-    city: "Bali"
+    city: "Bali",
   },
   // Canadian resort
   {
     id: 2,
     name: "Fairmont Le Chateau Frontenac",
-    city: "Quebec City"
+    city: "Quebec City",
   },
   // Eqyptian resort
   {
     id: 3,
     name: "Kempinski Nile Hotel",
-    city: "Cairo"
+    city: "Cairo",
   },
   // South African resort
   {
     id: 4,
-    name: "Crocodile Bridge Safari Lodge",
-    city: "Komatipoort"
+    name: "Cape Heritage Hotel",
+    city: "Cape Town",
   },
   // Amsterdam resort
   {
     id: 5,
     name: "Movenpick Hotel",
-    city: "Amsterdam"
+    city: "Amsterdam",
   },
   // London resort
   {
     id: 6,
     name: "The Resident Covent Garden",
-    city: "London"
+    city: "London",
   },
   // Italian resort
   {
     id: 7,
     name: "Hotel Du Lac",
-    city: "Bellagio"
+    city: "Bellagio",
   },
   // Portugese resort
   {
     id: 8,
-    name: "Quinta Jardins do Lago",
-    city: "Funchal"
+    name: "Hotel Avenida Palace",
+    city: "Lisbon",
   },
   // Morrocan resort
   {
     id: 9,
     name: "Riad Melhoun & Spa",
-    city: "Marrakech"
+    city: "Marrakech",
   },
   // Swedish resort
   {
     id: 10,
     name: "Radisson Blu Scandinavia Hotel",
-    city: "Gothenburg"
+    city: "Gothenburg",
   },
 ];
 

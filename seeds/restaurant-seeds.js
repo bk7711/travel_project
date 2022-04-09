@@ -1,65 +1,65 @@
 const { Restaurant } = require("../models");
 
 const Restaurantdata = [
-  // Balian restaurant  
+  // Balian restaurant
   {
     id: 1,
     name: "Bai Yun",
-    city: "Bali"
+    city: "Bali",
   },
   // Canadian restaurant
   {
     id: 2,
     name: "La Planque",
-    city: "Quebec City"
+    city: "Quebec City",
   },
   // Eqyptian restaurant
   {
     id: 3,
     name: "Al Khal Egyptian Restaurant",
-    city: "Cairo"
+    city: "Cairo",
   },
   // South African restaurant
   {
     id: 4,
-    name: "Tambarina Guest House & Restaurant",
-    city: "Komatipoort"
+    name: "Lelapa",
+    city: "Cape Town",
   },
   // Amsterdam restaurant
   {
     id: 5,
     name: "Mr. Meat",
-    city: "Amsterdam"
+    city: "Amsterdam",
   },
   // London restaurant
   {
     id: 6,
     name: "The Park Room",
-    city: "London"
+    city: "London",
   },
   // Italian restaurant
   {
     id: 7,
     name: "Alle Darsene di Loppia",
-    city: "Bellagio"
+    city: "Bellagio",
   },
   // Portugese restaurant
   {
     id: 8,
     name: "ILHAkAFFE",
-    city: "Funchal"
+    city: "Lisbon",
   },
   // Morrocan restaurant
   {
     id: 9,
     name: "Casa Lalla",
-    city: "Marrakech"
+    city: "Marrakech",
   },
   // Swedish restaurant
   {
     id: 10,
     name: "Thornstroms",
-    city: "Gothenburg"
+    city: "Gothenburg",
   },
 ];
 

@@ -3,43 +3,53 @@ const { Location } = require("../models");
 const locationdata = [
   {
     id: 1,
-    name: "Bali",
+    city: "Bali",
+    country:"Indonesia"
   },
   {
     id: 2,
-    name: "Canada",
+    city: "Quebec City"
+    country: "Canada",
   },
   {
     id: 3,
-    name: "Egypt",
+    city: "Cairo",
+    country: "Egypt",
   },
   {
     id: 4,
-    name: "South Africa",
+    city:"Cape Town",
+    country: "South Africa",
   },
   {
     id: 5,
-    name: "Amsterdam",
+    city: "Amsterdam",
+    country:"Netherlands"
   },
   {
     id: 6,
-    name: "London",
+    city: "London",
+    country:"England"
   },
   {
     id: 7,
-    name: "Italy",
+    city:"Bellagio"
+    country: "Italy"
   },
   {
     id: 8,
-    name: "Portugal",
+    city:"Lisbon"
+    country: "Portugal",
   },
   {
     id: 9,
-    name: "Morocco",
+    city:"Marrakech"
+    country: "Morocco"
   },
   {
     id: 10,
-    name: "Sweden",
+    city:"Gothenburg"
+    country: "Sweden",
   },
 ];
 
