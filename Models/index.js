@@ -2,6 +2,7 @@
 const User = require("./User");
 const Location = require("./Locations");
 const Hotel = require("./Hotels")
+const Restaurant = require("./Restaurants")
 // create associations
 
 
@@ -13,4 +14,4 @@ const Hotel = require("./Hotels")
 
 //
 
-module.exports = { User, Location, Hotel };
+module.exports = { User, Location, Hotel, Restaurant };
