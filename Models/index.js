@@ -3,7 +3,7 @@ const User = require("./User");
 const Location = require("./Locations");
 const Hotel = require("./Hotels");
 const Restaurant = require("./Restaurants");
-const Comment = require("./Comments");
+const Comment = require("./Comment");
 const Trip = require("./Trip");
 // create associations
 
@@ -15,4 +15,4 @@ const Trip = require("./Trip");
 
 //
 
-module.exports = { User, Location, Hotel, Restaurant };
+module.exports = { User, Location, Hotel, Restaurant, Comment, Trip };

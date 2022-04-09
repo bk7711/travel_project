@@ -8,18 +8,18 @@ const locationdata = [
   },
   {
     id: 2,
-    city: "Quebec City"
-    country: "Canada",
+    city: "Quebec City",
+    country: "Canada"
   },
   {
     id: 3,
     city: "Cairo",
-    country: "Egypt",
+    country: "Egypt"
   },
   {
     id: 4,
     city:"Cape Town",
-    country: "South Africa",
+    country: "South Africa"
   },
   {
     id: 5,
@@ -33,23 +33,23 @@ const locationdata = [
   },
   {
     id: 7,
-    city:"Bellagio"
+    city:"Bellagio",
     country: "Italy"
   },
   {
     id: 8,
-    city:"Lisbon"
-    country: "Portugal",
+    city:"Lisbon",
+    country: "Portugal"
   },
   {
     id: 9,
-    city:"Marrakech"
+    city:"Marrakech",
     country: "Morocco"
   },
   {
     id: 10,
-    city:"Gothenburg"
-    country: "Sweden",
+    city:"Gothenburg",
+    country: "Sweden"
   },
 ];
 
