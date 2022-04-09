@@ -1,7 +1,9 @@
 // import all models
 const User = require("./User");
-// create associations
 const Location = require("./Locations");
+const Hotel = require("./Hotels")
+// create associations
+
 
 // user has ...
 
@@ -11,4 +13,4 @@ const Location = require("./Locations");
 
 //
 
-module.exports = { User, Location };
+module.exports = { User, Location, Hotel };
