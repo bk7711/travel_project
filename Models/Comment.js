@@ -12,8 +12,11 @@ Comment.init(
       autoIncrement: true,
     },
     comment_text: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        len: [1],
+      },
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -22,17 +25,17 @@ Comment.init(
         key: "id",
       },
     },
-    // trip_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: "trip",
-    //     key: "id",
-    //   },
-    // },
+    trip_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "trip",
+        key: "id",
+      },
+    },
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: "comment",

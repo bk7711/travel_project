@@ -5,6 +5,7 @@ const Hotel = require("./Hotels");
 const Restaurant = require("./Restaurants");
 const Comment = require("./Comment");
 const Trip = require("./Trip");
+
 // create associations
 Trip.belongsTo(User, {
   foreignKey: "user_id",

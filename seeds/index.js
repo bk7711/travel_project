@@ -22,11 +22,11 @@ const seedAll = async () => {
   await seedRestaurants();
   console.log("--------------");
 
-  await seedTrips();
-  console.log("--------------");
+  // await seedTrips();
+  // console.log("--------------");
 
-  await seedComments();
-  console.log("--------------");
+  // await seedComments();
+  // console.log("--------------");
 
   process.exit(0);
 };
