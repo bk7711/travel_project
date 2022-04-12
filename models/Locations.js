@@ -11,6 +11,10 @@ Location.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    picture: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     city: {
       type: DataTypes.STRING,
       allowNull: false,
