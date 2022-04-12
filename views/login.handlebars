@@ -1,39 +1,35 @@
-<div class="row justify-space-between-md">
-    <div class="login-card">
-        <h2 class="page-title">Login</h2>
-        <form class="form login-form">
-            <div class="form-group">
-                <label for="email-login">Email:</label>
-                <input class="form-input" type="text" id="email-login" />
-            </div>
-            <div class="form-group">
-                <label for="password-login">Password:</label>
-                <input class="form-input" type="password" id="password-login" />
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary" type="submit">login</button>
-            </div>
+<div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+        <form action="#" class="form signup-form" id="form1">
+            <h2 class="form__title">Sign Up</h2>
+            <input type="text" placeholder="User" class="input username-signup" />
+            <input type="email" placeholder="Email" class="input email-signup" />
+            <input type="password" placeholder="Password" class="input password-signup" />
+            <button class="btn" type="submit">Sign Up</button>
         </form>
     </div>
-    <div class="login-card">
-        <h2 class="page-title">Signup</h2>
-        <form class="form signup-form">
-            <div class="form-group">
-                <label for="username-signup">Username:</label>
-                <input class="form-input" type="text" id="username-signup" />
-            </div>
-            <div class="form-group">
-                <label for="email-signup">Email:</label>
-                <input class="form-input" type="text" id="email-signup" />
-            </div>
-            <div class="form-group">
-                <label for="password-signup">Password:</label>
-                <input class="form-input" type="password" id="password-signup" />
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary" type="submit">signup</button>
-            </div>
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+        <form action="#" class="form login-form" id="form2">
+            <h2 class="form__title">Sign In</h2>
+            <input type="email" placeholder="Email" class="input email-login" />
+            <input type="password" placeholder="Password" class="input password-login" />
+            <a href="#" class="link">Forgot your password?</a>
+            <button class="btn" type="submit">Sign In</button>
         </form>
+    </div>
+    <!-- Overlay -->
+    <div class="container__overlay">
+        <div class="overlay">
+            <div class="overlay__panel overlay--left">
+                <button class="btn" type="submit" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay__panel overlay--right">
+                <button class="btn" type="submit" id="signUp">Sign Up</button>
+            </div>
+        </div>
     </div>
 </div>
-<script src="./js/login.js"></script>
+<script src="/js/login.js"></script>
+<script src="/js/style.js"></script>

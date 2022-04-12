@@ -47,6 +47,13 @@
       position: relative;  
       width: 100%;  
  }  
+ .center-text {
+     width: 758px;
+     display: flex;
+     text-align: center;
+     justify-content: center;
+
+ }
  .container__form {  
       height: 100%;  
       position: absolute;  
