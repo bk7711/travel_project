@@ -6,26 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Planner</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
+  <div>
+    <header class="center-text">
       <h1>
         <a href="/">Travel Planner</a>
       </h1>
     </header>
-    <nav>
+    <nav class="center-text">
+      {{#if loggedIn}}
       <a href="/">Home</a>
-      <a href="/login">Login</a>
+      <button id="logout" class="btn-no-style">logout</button>
+      {{else}}
+      <a href="/login">login</a>
+      {{/if}}
+    </nav>
     </nav>
     <main>
-      <div class="gallery">
-        {{{body}}}
+      <div>
+        {{{ body }}}
       </div>
     </main>
   </div>
+  <script src="/js/logout.js"></script>
 </body>
 
 </html>

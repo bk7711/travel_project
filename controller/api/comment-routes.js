@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const { Comment } = require("../../Models");
 
+//need to be able to get comments by user and trip comments
+
 router.get("/", (req, res) => {
   Comment.findAll()
     .then((dbCommentData) => res.json(dbCommentData))
