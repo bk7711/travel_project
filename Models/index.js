@@ -25,17 +25,6 @@ User.hasMany(Comment, {
 Hotel.belongsTo(Location, {
   foreignKey: "location_id",
 });
-<<<<<<< HEAD
-Hotel.belongsToMany(Trip, {
-  through: "Trip",
-  foreignKey: "id",
-});
-
-Location.belongsToMany(Trip, {
-  through: "Trip",
-  foreignKey: "id",
-});
-=======
 // Hotel.belongsToMany(Trip, {
 //   through: "Trip",
 //   foreignKey: "id",
@@ -45,23 +34,15 @@ Location.belongsToMany(Trip, {
 //   through: "Trip",
 //   foreignKey: "id",
 // });
->>>>>>> fac71e91591fd4b6e479c4fb24bb8136cd863cba
 
 Restaurant.belongsTo(Location, {
   foreignKey: "location_id",
 });
 
-<<<<<<< HEAD
-Restaurant.belongsToMany(Trip, {
-  through: "Trip",
-  foreignKey: "id",
-});
-=======
 // Restaurant.belongsToMany(Trip, {
 //   through: "Trip",
 //   foreignKey: "id",
 // });
->>>>>>> fac71e91591fd4b6e479c4fb24bb8136cd863cba
 Comment.belongsTo(User, {
   through: "Trip",
   foreignKey: "comment_id",
