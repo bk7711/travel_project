@@ -22,6 +22,12 @@ User.hasMany(Comment, {
   onDelete: "CASCADE",
 });
 
+// Trip.hasMany(Comment, {
+//   through: "Comment",
+//   foreignKey: "user_id",
+//   onDelete: "CASCADE",
+// });
+
 Hotel.belongsTo(Location, {
   foreignKey: "location_id",
 });
