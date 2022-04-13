@@ -30,6 +30,7 @@ body {
    font-weight: 300;
    margin: 0;
    margin-bottom: 1.25rem;
+   color: #3e4b8f;
 }
 .link {
    color: var(--gray);
