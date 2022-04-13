@@ -3,6 +3,8 @@ const sequelize = require("../config/connection");
 const seedLocation = require("./location-seeds");
 const seedHotels = require("./hotel-seeds");
 const seedRestaurants = require("./restaurant-seeds");
+const seedComment = require("./comment-seeds");
+const seedTrips = require("./trip-seeds");
 
 const seedAll = async () => {
   
@@ -21,6 +23,12 @@ const seedAll = async () => {
   await seedRestaurants();
   console.log("--------------");
 
+  await seedComment();
+   console.log("--------------");
+
+  await seedTrips();
+  console.log("--------------");
+  
   process.exit(0);
 };
 
