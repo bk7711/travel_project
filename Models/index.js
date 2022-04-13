@@ -16,10 +16,12 @@ User.hasMany(Trip, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
 });
+
 User.hasMany(Comment, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
 });
+
 Hotel.belongsTo(Location, {
   foreignKey: "location_id",
 });
@@ -27,13 +29,16 @@ Hotel.belongsTo(Location, {
 //   through: "Trip",
 //   foreignKey: "id",
 // });
+
 // Location.belongsToMany(Trip, {
 //   through: "Trip",
 //   foreignKey: "id",
 // });
+
 Restaurant.belongsTo(Location, {
   foreignKey: "location_id",
 });
+
 // Restaurant.belongsToMany(Trip, {
 //   through: "Trip",
 //   foreignKey: "id",

@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { User } = require("../../models");
 
+
 // CREATE new user
 router.get("/", (req, res) => {
   User.findAll()
