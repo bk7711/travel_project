@@ -11,11 +11,11 @@ const loginFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
-    if (response.ok) {
-      document.location.replace('/api/trips');
-    } else {
-      alert('Failed to log in.');
-    }
+    // if (response.ok) {
+    //   document.location.replace('/api/trips');
+    // } else {
+    //   alert('Failed to log in.');
+    // }
   }
 };
 
