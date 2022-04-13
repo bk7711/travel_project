@@ -22,11 +22,8 @@ const locationdata = [
   },
   {
     id: 4,
-<<<<<<< HEAD
-=======
     picture:
       "../public/images/capetown-kylefromthenorth-UrhglJ-2Q8M-unsplash.jpg",
->>>>>>> 84aa17b864a2e21a7c96e955bacfb31eb9246e19
     city: "Cape Town",
     country: "South Africa",
   },
@@ -44,39 +41,27 @@ const locationdata = [
   },
   {
     id: 7,
-<<<<<<< HEAD
-=======
     picture:
       "../public/images/bellagio-anastasiya-dalenka-2TuNQcTtcIM-unsplash.jpg",
->>>>>>> 84aa17b864a2e21a7c96e955bacfb31eb9246e19
     city: "Bellagio",
     country: "Italy",
   },
   {
     id: 8,
-<<<<<<< HEAD
-=======
     picture: "../public/images/lisbon-ronan-furuta-gZfGWcfzaTQ-unsplash.jpg",
->>>>>>> 84aa17b864a2e21a7c96e955bacfb31eb9246e19
     city: "Lisbon",
     country: "Portugal",
   },
   {
     id: 9,
-<<<<<<< HEAD
-=======
     picture: "../public/images/morocco-zakariae-daoui-Dql2_LN5sRg-unsplash.jpg",
->>>>>>> 84aa17b864a2e21a7c96e955bacfb31eb9246e19
     city: "Marrakech",
     country: "Morocco",
   },
   {
     id: 10,
-<<<<<<< HEAD
-=======
     picture:
       "../public/images/gothenburg-philip-myrtorp-r3Q66_JQNA4-unsplash.jpg",
->>>>>>> 84aa17b864a2e21a7c96e955bacfb31eb9246e19
     city: "Gothenburg",
     country: "Sweden",
   },
