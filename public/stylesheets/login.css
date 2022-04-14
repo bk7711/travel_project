@@ -42,7 +42,7 @@ body {
    margin: 1.5rem 0;
    text-decoration: none;
 }
-.container {
+.containers {
    background-color: var(--white);
    border-radius: var(--button-radius);
    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
@@ -59,33 +59,33 @@ body {
    text-align: center;
    justify-content: center;
 }
-.container__form {
+.containers__form {
    height: 100%;
    position: absolute;
    top: 0;
    transition: all 0.6s ease-in-out;
 }
-.container--signin {
+.containers--signin {
    left: 0;
    width: 50%;
    z-index: 2;
 }
-.container.right-panel-active .container--signin {
+.containers.right-panel-active .containers--signin {
    transform: translateX(100%);
 }
-.container--signup {
+.containers--signup {
    left: 0;
    opacity: 0;
    width: 50%;
    z-index: 1;
 }
-.container.right-panel-active .container--signup {
+.containers.right-panel-active .containers--signup {
    animation: show 0.6s;
    opacity: 1;
    transform: translateX(100%);
    z-index: 5;
 }
-.container__overlay {
+.containers__overlay {
    height: 100%;
    left: 50%;
    overflow: hidden;
@@ -95,7 +95,7 @@ body {
    width: 50%;
    z-index: 100;
 }
-.container.right-panel-active .container__overlay {
+.containers.right-panel-active .containers__overlay {
    transform: translateX(-100%);
 }
 .overlay {
@@ -112,7 +112,7 @@ body {
    transition: transform 0.6s ease-in-out;
    width: 200%;
 }
-.container.right-panel-active .overlay {
+.containers.right-panel-active .overlay {
    transform: translateX(50%);
 }
 .overlay__panel {
@@ -131,14 +131,14 @@ body {
 .overlay--left {
    transform: translateX(-20%);
 }
-.container.right-panel-active .overlay--left {
+.containers.right-panel-active .overlay--left {
    transform: translateX(0);
 }
 .overlay--right {
    right: 0;
    transform: translateX(0);
 }
-.container.right-panel-active .overlay--right {
+.containers.right-panel-active .overlay--right {
    transform: translateX(20%);
 }
 .btn {
