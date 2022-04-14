@@ -152,3 +152,7 @@ body {
    color: #755d87;
    text-decoration: none;
 }
+
+.container_homepage {
+   overflow: hidden;
+}
