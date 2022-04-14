@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/stylesheets/dashboard.css" />
 <nav class="center-text navbar">
    <a href="/">Home</a>
    <button id="logout" class="">logout</button>
@@ -10,8 +11,19 @@
    <div class="search-container container">
       <div class="row">
          <div class="col">
-            <label for="search-bar">Where would you like to go?</label>
-            <input type="text" id="search-bar" placeholder="ex.) Bali" />
+            {{!-- <label for="search-bar">Where would you like to go?</label>
+            <input type="text" id="search-bar" placeholder="ex.) Bali" /> --}}
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+               </button>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </div>
 
             <div class="search-results">
                <br />
@@ -60,29 +72,18 @@
                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                   img
                   <div class="thumbnail">
-                     <img
-                        class="img-fluid"
-                        src="https://assets.codepen.io/7125791/chromaticpool.jpg"
-                        alt=""
-                     />
+                     <img class="img-fluid" src="https://assets.codepen.io/7125791/chromaticpool.jpg" alt="" />
                   </div>
                   <br />
                   img
                   <div class="thumbnail">
-                     <img
-                        class="img-fluid"
-                        src="https://assets.codepen.io/7125791/orint083.jpg"
-                        alt=""
-                     />
+                     <img class="img-fluid" src="https://assets.codepen.io/7125791/orint083.jpg" alt="" />
                   </div>
                   <br />
                   img
                   <div class="thumbnail">
-                     <img
-                        class="img-fluid"
-                        src="https://assets.codepen.io/7125791/DisneyContemporary.jpg"
-                        alt="Walt Disney Contemporary Resort"
-                     />
+                     <img class="img-fluid" src="https://assets.codepen.io/7125791/DisneyContemporary.jpg"
+                        alt="Walt Disney Contemporary Resort" />
                   </div>
                   <br />
 
