@@ -5,15 +5,15 @@
 </nav>
 
 <br />
-<div class="parent-contianer d-flex">
+<div id="dashboard-parents" class="parent-contianer d-flex">
    {{! left container }}
-   <div class="search-container container">
+   <section class="search-container container">
       <div class="row">
          <div class="col">
             <label for="search-bar">Where would you like to go?</label>
             <input type="text" id="search-bar" placeholder="ex.) Bali" />
 
-            <div class="search-results">
+            <div id="search-results" class="search-results">
                <br />
                <h3>Recent Searches</h3>
                {{! not sure how to denote that infomation will get populated based on
@@ -40,11 +40,11 @@
             </div>
          </div>
       </div>
-   </div>
+   </section>
 
    {{! right container }}
 
-   <div class="overivew container">
+   <section id="overview" class="overivew container">
       <div class="flex-row">
          <div class="col">
             <div class="profile">
@@ -91,5 +91,5 @@
             </div>
          </div>
       </div>
-   </div>
+   </section>
 </div>

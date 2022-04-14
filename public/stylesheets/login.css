@@ -4,6 +4,10 @@
    --gray: #333;
    --blue: #0367a6;
    --lightblue: #008997;
+   --primary: #8cc5c9;
+   --secondary: #7860f3;
+   --tertiary: #3e4b8f;
+   --border-radius: 20px;
    /* RADII */
    --button-radius: 0.7rem;
    /* SIZES */
@@ -14,6 +18,7 @@
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
+   font-family: "Merienda One", cursive;
    align-items: center;
    background-color: var(--white);
    background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
@@ -24,7 +29,6 @@ body {
    display: grid;
    height: 100vh;
    place-items: center;
-   font-family: "Merienda One", cursive;
 }
 .form__title {
    font-weight: 300;
@@ -180,6 +184,7 @@ body {
    padding: 0.9rem 0.9rem;
    margin: 0.5rem 0;
    width: 100%;
+   cursor: pointer;
 }
 @keyframes show {
    0%,
