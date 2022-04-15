@@ -1,20 +1,16 @@
-html {
-   box-sizing: border-box;
-   font-size: 62.5%;
-}
-html *,
+/* html *,
 html *:before,
 html *:after {
    box-sizing: inherit;
-}
-body {
+} */
+/* body {
    display: flex;
    justify-content: center;
    align-items: center;
    width: 100vw;
    height: 100vh;
    background-color: #e6e6e6;
-}
+} */
 .container_homepage {
    display: flex;
    flex-wrap: wrap;
@@ -25,7 +21,7 @@ body {
 .card_homepage {
    width: 300px;
    margin: 10px;
-   background-color: white;
+   background-color: #9eadf1;
    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .card_homepage:hover .card_homepage__caption {
@@ -134,7 +130,7 @@ body {
    color: black;
    background-color: white;
 }
-.disclaimer {
+/* .disclaimer {
    position: fixed;
    bottom: 0;
    left: 50%;
@@ -151,7 +147,7 @@ body {
 .disclaimer__link {
    color: #755d87;
    text-decoration: none;
-}
+} */
 
 .container_homepage {
    overflow: hidden;

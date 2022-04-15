@@ -25,20 +25,21 @@
       <link rel="stylesheet" type="text/css" href="/stylesheets/login.css" />
    </head>
 
-   <body>
+   <body class="body-homepage justify-content-center">
       <div>
          <header>
             <h1 class="text-centered">
                <a href="/">Travel Planner</a>
             </h1>
          </header>
-         <nav class="text-center">
+         <nav class="text-centered">
             <a href="/">Home</a>
             {{#if loggedIn}}
-               <button id="logout" class="">logout</button>
+               <button id="logout" class="btn">Logout</button>
             {{else}}
                <a href="/login">Login</a>
             {{/if}}
+
          </nav>
          <main>
             <div>

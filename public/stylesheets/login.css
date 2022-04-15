@@ -7,7 +7,7 @@
    --primary: #8cc5c9;
    --secondary: #7860f3;
    --tertiary: #3e4b8f;
-   --border-radius: 20px;
+   /* --border-radius: 20px; */
    /* RADII */
    --button-radius: 0.7rem;
    /* SIZES */
@@ -22,7 +22,7 @@ body {
    align-items: center;
    background-color: var(--white);
    background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
-   background-attachment: fixed;
+   background-attachment: relative;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -30,6 +30,7 @@ body {
    height: 100vh;
    place-items: center;
 }
+
 .form__title {
    font-weight: 300;
    margin: 0;
@@ -51,7 +52,7 @@ body {
    max-width: var(--max-width);
    overflow: hidden;
    position: relative;
-   width: 100%;
+   width: 200%;
 }
 .center-text {
    width: 758px;
@@ -159,7 +160,7 @@ body {
    text-transform: uppercase;
    transition: transform 80ms ease-in;
 }
-.form > .btn {
+.form-main > .btn {
    margin-top: 1.5rem;
 }
 .btn:active {
@@ -168,7 +169,7 @@ body {
 .btn:focus {
    outline: none;
 }
-.form {
+.form-main {
    background-color: var(--white);
    display: flex;
    align-items: center;

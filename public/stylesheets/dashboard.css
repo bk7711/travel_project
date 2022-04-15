@@ -76,11 +76,11 @@ img {
    border-radius: 20%;
 } */
 
-input {
+/* input {
    cursor: pointer;
-}
+} */
 
-button {
+/* button {
    background-color: #1cbfdb;
    border: solid;
    border-color: #0d91a8;
@@ -93,7 +93,7 @@ button {
 
 button:hover {
    background-color: #134852;
-}
+} */
 
 label {
    font-size: xx-large;
