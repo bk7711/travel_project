@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/stylesheets/dashboard.css" />
 <nav class="center-text navbar">
    <a href="/">Home</a>
    <button id="logout" class="">logout</button>
@@ -11,19 +10,15 @@
    <div class="search-container container">
       <div class="row">
          <div class="col">
-            {{!-- <label for="search-bar">Where would you like to go?</label>
-            <input type="text" id="search-bar" placeholder="ex.) Bali" /> --}}
-
-            <div class="dropdown">
-               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
-               </button>
-               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-               </div>
+            <label for="search-bar">Where would you like to go?</label>
+            <div class="nav-item dropdown">
+               <button class="btn btn-secondary nav-link dropdown-toggle" href="#" id="dropdown01"
+                  data-bs-toggle="dropdown" aria-expanded="false">Locations</button>
+               <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+               </ul>
             </div>
 
             <div class="search-results">
