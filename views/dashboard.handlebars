@@ -1,9 +1,12 @@
-<nav class="center-text navbar">
+{{! removed second navbar }}
+{{! <nav class="center-text navbar">
    <a href="/">Home</a>
    <button id="logout" class="">logout</button>
    <a href="/login">login</a>
-</nav>
+</nav> }}
+<div class="bg-container">
 
+<<<<<<< HEAD
 <br />
 <div class="parent-contianer d-flex">
    {{! left container }}
@@ -30,12 +33,22 @@
                   {{/each}} --}}
                </ul>
             </div>
+=======
+   <div class="parent-contianer d-flex">
+      {{! left container }}
+      <section class="search-container container">
+         <div class="row">
+            <div class="col search-col">
+               <label for="search-bar">Where would you like to go?</label>
+               <input type="text" id="search-bar" placeholder="ex.) Bali" />
+>>>>>>> 3c6edebb827fc8257544321d5357faf65c681f6f
 
-            <div class="search-results">
-               <br />
-               <h3>Recent Searches</h3>
-               {{! not sure how to denote that infomation will get populated based on
+               <div id="search-results" class="search-results">
+                  <br />
+                  <h3>Recent Searches</h3>
+                  {{! not sure how to denote that infomation will get populated based on
                results }}
+<<<<<<< HEAD
                <br />
                <br />
                <div>
@@ -90,13 +103,76 @@
                   <div class="thumbnail">
                      <img class="img-fluid" src="https://assets.codepen.io/7125791/DisneyContemporary.jpg"
                         alt="Walt Disney Contemporary Resort" />
+=======
+                  <br />
+                  <br />
+                  <div class="card-body">
+                     <h5>Hotel Cannes</h5>
+                     <p>Canes, France</p>
+                     <p>blurb? not sold....can be done down the road.</p>
+>>>>>>> 3c6edebb827fc8257544321d5357faf65c681f6f
                   </div>
                   <br />
-
+                  <div class="card-body">
+                     <h5>HOTEL NAME HERE</h5>
+                     <p>Location, Location</p>
+                     <p>blurb? not sold....can be done down the road.</p>
+                  </div>
                   <br />
+                  <div class="card-body">
+                     <h5>Disney Contemporary Resort</h5>
+                     <p>Orlando, Florida</p>
+                     <p>blurb? not sold....can be done down the road.</p>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
+      </section>
+
+      {{! right container }}
+
+      <section id="overview" class="overivew container">
+         <div class="card_dashboard">
+            <figure class="card_dashboard__thumb">
+               <img
+                  src="https://assets.codepen.io/7125791/Costa_Rica_3.jpg"
+                  class="card_dashboard__image"
+               />
+               <figcaption class="card_dashboard__caption">
+                  <h2 class="card_dashboard__title">COSTA RICA</h2>
+                  <p class="card_dashboard__snippet"></p>
+                  <a href="" class="card_dashboard__button">Book Now!</a>
+               </figcaption>
+            </figure>
+         </div>
+
+         <div class="card_dashboard">
+            <figure class="card_dashboard__thumb">
+               <img
+                  src="https://assets.codepen.io/7125791/Bali_Vacation_2.jpg"
+                  class="card_dashboard__image"
+               />
+               <figcaption class="card_dashboard__caption">
+                  <h2 class="card_dashboard__title">BALI</h2>
+                  <p class="card_dashboard__snippet"></p>
+                  <a href="" class="card_dashboard__button">Book Now!</a>
+               </figcaption>
+            </figure>
+         </div>
+
+         <div class="card_dashboard">
+            <figure class="card_dashboard__thumb">
+               <img
+                  src="https://assets.codepen.io/7125791/Greece_Vacation_1.jpg"
+                  class="card_dashboard__image"
+               />
+               <figcaption class="card_dashboard__caption">
+                  <h2 class="card_dashboard__title">GREECE</h2>
+                  <p class="card_dashboard__snippet"></p>
+                  <a href="" class="card_dashboard__button">Book Now!</a>
+               </figcaption>
+            </figure>
+         </div>
+      </section>
    </div>
 </div>
