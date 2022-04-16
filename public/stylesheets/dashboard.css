@@ -33,7 +33,10 @@ header {
    padding: 20px;
    text-align: center;
    background: none;
+   font-size: larger;
+   font-weight: bold;
    color: var(--secondary);
+   text-shadow: 3px 2px var(--tertiary);
 }
 
 /* main {
@@ -61,6 +64,8 @@ nav a {
    padding: 20px 30px;
    text-decoration: none;
    text-align: center;
+   text-shadow: 1px 1px var(--tertiary);
+   font-size: larger;
 }
 
 nav a:hover {
