@@ -26,7 +26,9 @@ router.get("/", (req, res) => {
 router.post("/", async (req, res) => {
   try {
     const dbLocationData = await Location.create({
-      name: req.body.name,
+      picture: req.body.picture,
+      city: req.body.city,
+      country: req.body.country,
     });
 
     // req.session.save(() => {
