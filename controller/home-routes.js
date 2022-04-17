@@ -14,7 +14,8 @@ router.get("/tripdetails", (req, res) => {
 
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect("/");
+    // redirecting to the dashboard instead of back home
+    res.redirect("/dashboard");
     return;
   }
 
