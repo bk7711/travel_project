@@ -37,7 +37,10 @@
 {{!-- if logged in, display logout button and set "Home" to redirect to the dashboard --}}
       {{#if loggedIn}}
       <a href="/dashboard">Home</a>
-      <button id="logout" class="btn">Logout</button>
+      {{!-- should this be a btn with an href? --}}
+      {{!-- <button id="logout" class="btn">Logout</button> --}}
+      {{!-- created a logout link to match the login link  --}}
+      <a href="/" id="logout">Logout</a>
       {{else}}
       {{!-- otherwise, return to landing page and display a login button --}}
       <a href="/">Home</a>
@@ -49,6 +52,7 @@
   <main>
     {{{body}}}
   </main>
+  
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
@@ -62,11 +66,10 @@
 {{!-- </body> --}}
 
 {{!-- are these supposed to be here??  --}}
-<script src="/js/login.js"></script>
-<script src="/js/style.js"></script>
-{{#if loggedIn}}
+
+{{!-- {{#if loggedIn}}
 <script src="/js/logout.js"></script>
-{{/if}}
+{{/if}} --}}
 </body>
 
 
