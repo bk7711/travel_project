@@ -26,34 +26,42 @@
 </head>
 
 <body class="body-homepage justify-content-center">
-  <div>
-    <header>
-      <h1 class="text-centered">
-        <a href="/">Travel Planner</a>
-      </h1>
-    </header>
+{{!-- removed random div --}}
+  <header>
+    {{!-- nested the navigation within the header --}}
+    <h1 class="text-centered">
+      <a href="/">Travel Planner</a>
+    </h1>
+
     <nav class="text-centered">
-      <a href="/">Home</a>
+{{!-- if logged in, display logout button and set "Home" to redirect to the dashboard --}}
       {{#if loggedIn}}
+      <a href="/dashboard">Home</a>
       <button id="logout" class="btn">Logout</button>
       {{else}}
+      {{!-- otherwise, return to landing page and display a login button --}}
+      <a href="/">Home</a>
       <a href="/login">Login</a>
       {{/if}}
-
     </nav>
-    <main>
-      <div>
-        {{{body}}}
-      </div>
-    </main>
-  </div>
+  </header>
+{{!-- unnecessary html tags were removed from <main> section --}}
+  <main>
+    {{{body}}}
   </main>
-  </div>
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
-</body>
 
+{{!-- added a footer with a link that redirects to a meme --}}
+  <footer>
+    <a href="https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33beacf4ba7263a23cd79_qh6ImC4NPdyPbvn-7ns8FYsgOskDPDWLnX31mLCOgSwpX_SQgmo8krqdg4e6XAnSbqRAtZMYqlf7UTvlHiXgt5YtMwbt9IRY1fAbOjyq5hARui-xEQUgI48EOjhJGuIsSFDg90L6.jpeg">Made with lots of coffee, hours of coding, and a dash of sleep deprivation.</a>
+  </footer>
+
+{{!-- removed duplicate body tag --}}
+{{!-- </body> --}}
+
+{{!-- are these supposed to be here??  --}}
 <script src="/js/login.js"></script>
 <script src="/js/style.js"></script>
 {{#if loggedIn}}
