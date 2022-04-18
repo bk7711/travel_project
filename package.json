@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/bk7711/travel_project#readme",
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
     "bcrypt": "^5.0.1",
     "bootstrap": "^5.1.3",
     "connect-session-sequelize": "^7.1.3",
