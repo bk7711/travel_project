@@ -1,8 +1,17 @@
-(function() {
+const client = require("filestack-js").init("AKOE7nKZS9KluxyVv5kiZz");
+(function () {
   // Bind Click event to the drop down navigation button
-  document.querySelector('.nav-button').addEventListener('click', function() {
-    /*  Toggle the CSS closed class which reduces the height of the UL thus 
+  document.querySelector(".nav-button").addEventListener(
+    "click",
+    function () {
+      /*  Toggle the CSS closed class which reduces the height of the UL thus 
         hiding all LI apart from the first */
-    this.parentNode.parentNode.classList.toggle('closed')
-  }, false);
+      this.parentNode.parentNode.classList.toggle("closed");
+    },
+    false
+  );
 })();
+
+//filestack application
+
+client.picker(options).open();

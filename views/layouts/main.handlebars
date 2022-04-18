@@ -62,6 +62,10 @@
 {{!-- </body> --}}
 
 {{!-- are these supposed to be here??  --}}
+<script src="//static.filestackapi.com/filestack-js/3.25.0/filestack.min.js" crossorigin="anonymous"></script>
+<script>
+  const client = filestack.init('apikey');
+</script>
 <script src="/js/login.js"></script>
 <script src="/js/style.js"></script>
 {{#if loggedIn}}
