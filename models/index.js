@@ -6,30 +6,32 @@ const Restaurant = require("./Restaurants");
 const Comment = require("./Comment");
 const Trip = require("./Trip");
 
-// create associations
-Trip.belongsTo(User, {
-  foreignKey: "user_id",
-  onDelete: "CASCADE",
-});
+// // create associations
+// Trip.belongsTo(User, {
+//    foreignKey: "user_id",
+//    onDelete: "CASCADE",
+// });
 User.hasMany(Trip, {
-  //   through: "Trip",
-  foreignKey: "user_id",
-  onDelete: "CASCADE",
+   foreignKey: "user_id",
+   onDelete: "CASCADE",
 });
 
 User.hasMany(Comment, {
-  foreignKey: "user_id",
-  onDelete: "CASCADE",
+   foreignKey: "user_id",
+   onDelete: "CASCADE",
+});
+Comment.belongsTo(User, {
+   foreignKey: "user_id",
 });
 
-// Trip.hasMany(Comment, {
+//; Trip.hasMany(Comment, {
 //   through: "Comment",
 //   foreignKey: "user_id",
 //   onDelete: "CASCADE",
 // });
 
 Hotel.belongsTo(Location, {
-  foreignKey: "location_id",
+   foreignKey: "location_id",
 });
 // Hotel.belongsToMany(Trip, {
 //   through: "Trip",
@@ -42,16 +44,16 @@ Hotel.belongsTo(Location, {
 // });
 
 Restaurant.belongsTo(Location, {
-  foreignKey: "location_id",
+   foreignKey: "location_id",
 });
 
 // Restaurant.belongsToMany(Trip, {
 //   through: "Trip",
 //   foreignKey: "id",
 // });
-Comment.belongsTo(User, {
-  through: "Trip",
-  foreignKey: "comment_id",
-});
+// Comment.belongsToMany(User, {
+//    through: "Trip",
+//    foreignKey: "comment_id",
+// });
 
 module.exports = { User, Location, Hotel, Restaurant, Comment, Trip };
