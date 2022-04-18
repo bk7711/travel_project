@@ -33,14 +33,14 @@
             </h1>
          </header>
          <nav class="text-centered">
-            {{#if loggedIn}}
+            {{!-- {{#if loggedIn}} --}}
                <a href="/dashboard">Travel Dash</a>
                <button id="logout" class="btn">Logout</button>
-            {{else}}
+            {{!-- {{else}} --}}
                {{!  }}
                <h3> insiade here {{loggedIn}} </h3>
                <a href="/login">Login</a>
-            {{/if}}
+            {{!-- {{/if}} --}}
          </nav>
 
          <main>
@@ -52,9 +52,9 @@
       </div>
       <script src="/js/login.js"></script>
 
-      {{#if loggedIn}}
+      {{!-- {{#if loggedIn}} --}}
          <script src="/js/logout.js"></script>
-      {{/if}}
+      {{!-- {{/if}} --}}
       <script src="/js/style.js"></script>
 
    </body>
