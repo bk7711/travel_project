@@ -33,25 +33,30 @@
             </h1>
          </header>
          <nav class="text-centered">
-            {{!-- {{#if loggedIn}} --}}
-            <a href="/dashboard">Travel Dash</a>
-            <button id="logout" class="btn">Logout</button>
-            {{!-- {{else}} --}}
-            <a href="/login">Login</a>
-            {{!-- {{/if}} --}}
-
+            {{#if loggedIn}}
+               <a href="/dashboard">Travel Dash</a>
+               <button id="logout" class="btn">Logout</button>
+            {{else}}
+               {{!  }}
+               <h3> insiade here {{loggedIn}} </h3>
+               <a href="/login">Login</a>
+            {{/if}}
          </nav>
+
          <main>
             <div>
                {{{body}}}
             </div>
          </main>
+
       </div>
       <script src="/js/login.js"></script>
+
+      {{#if loggedIn}}
+         <script src="/js/logout.js"></script>
+      {{/if}}
       <script src="/js/style.js"></script>
-      {{!-- {{#if loggedIn}} --}}
-      <script src="/js/logout.js"></script>
-      {{!-- {{/if}} --}}
+
    </body>
 
 </html>
