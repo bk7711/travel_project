@@ -19,4 +19,4 @@ Right now, this deployment is in *beta development*, meaning that there are stil
 
 ## Deployments
 [Github](https://github.com/bk7711/travel_project)   
-[Heroku](https://cb-travel-project.herokuapp.com/)   
+[Heroku](https://murmuring-springs-00638.herokuapp.com/)   
