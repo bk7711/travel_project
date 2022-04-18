@@ -1,5 +1,4 @@
 <html lang="en">
-
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -58,5 +57,26 @@
       <script src="/js/style.js"></script>
 
    </body>
+    </nav>
+    <main>
+      <div>
+        {{{body}}}
+      </div>
+    </main>
+  </div>
+  </main>
+  </div>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+<script src="/js/login.js"></script>
+<script src="/js/style.js"></script>
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
+</body>
+
 
 </html>

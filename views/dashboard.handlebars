@@ -17,13 +17,31 @@
          <div class="row">
             <div class="col search-col">
                <label for="search-bar">Where would you like to go?</label>
-               <input type="text" id="search-bar" placeholder="ex.) Bali" />
+               <div class="nav-item dropdown">
+               <button class="btn btn-secondary nav-link dropdown-toggle" href="#" id="dropdown01"
+                  data-bs-toggle="dropdown" aria-expanded="false">Locations</button>
+               <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                  <li><a class="dropdown-item" href="#">Bali, Indonesia</a></li>
+                  <li><a class="dropdown-item" href="#">Quebec City, Canada</a></li>
+                  <li><a class="dropdown-item" href="#">Cairo, Egypt</a></li>
+                  <li><a class="dropdown-item" href="#">Cape Town, Africa</a></li>
+                  <li><a class="dropdown-item" href="#">Amsterdam, Netherlands</a></li>
+                  <li><a class="dropdown-item" href="#">London, England</a></li>
+                  <li><a class="dropdown-item" href="#">Bellagio, Italy</a></li>
+                  <li><a class="dropdown-item" href="#">Lisbon, Portugal</a></li>
+                  <li><a class="dropdown-item" href="#">Marrakech, Morocco</a></li>
+                  <li><a class="dropdown-item" href="#">Gothenburg, Sweden</a></li>
+                  {{!-- {{#each location}}
+                  <li><a class="dropdown-item" href="#">{{city}}, {{country}}</a></li>
+                  {{/each}} --}}
+               </ul>
+            </div>
 
                <div id="search-results" class="search-results">
                   <br />
                   <h3>Recent Searches</h3>
                   {{! not sure how to denote that infomation will get populated based on
-               results }}
+                  results }}
                   <br />
                   <br />
                   <div class="card-body">
@@ -53,10 +71,7 @@
       <section id="overview" class="overivew container">
          <div class="card_dashboard">
             <figure class="card_dashboard__thumb">
-               <img
-                  src="https://assets.codepen.io/7125791/Costa_Rica_3.jpg"
-                  class="card_dashboard__image"
-               />
+               <img src="https://assets.codepen.io/7125791/Costa_Rica_3.jpg" class="card_dashboard__image" />
                <figcaption class="card_dashboard__caption">
                   <h2 class="card_dashboard__title">COSTA RICA</h2>
                   <p class="card_dashboard__snippet"></p>
@@ -95,10 +110,7 @@
 
          <div class="card_dashboard">
             <figure class="card_dashboard__thumb">
-               <img
-                  src="https://assets.codepen.io/7125791/Greece_Vacation_1.jpg"
-                  class="card_dashboard__image"
-               />
+               <img src="https://assets.codepen.io/7125791/Greece_Vacation_1.jpg" class="card_dashboard__image" />
                <figcaption class="card_dashboard__caption">
                   <h2 class="card_dashboard__title">GREECE</h2>
                   <p class="card_dashboard__snippet"></p>
