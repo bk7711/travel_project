@@ -22,6 +22,21 @@ Right now, this deployment is in *beta development*, meaning that there are stil
 
   - A countdown timer for trips that are past the "planning" stage. Reaching the stage where all the details are ironed out and you're just waiting until its time for <strong> Wheels Up </strong> time is the best! Its a tantilizing time to look forward to rest, relaxation, and a delicious Mojito.
 
+## Built With:
+* HTML
+* CSS
+* Javascript
+* Restful API's
+* Bcrypt
+* Filestack
+* MySql2
+* Sequelize
+* Handlebars
+* Dotenv
+* Nodemon
+
 ## Deployments:
 [Github](https://github.com/bk7711/travel_project)   
 [Heroku](https://murmuring-springs-00638.herokuapp.com/)   
+
+## Made with :desert_island: by Carolyn Blackwell, Avrumie Safranovitz, Christian Fox, Nija Jacques, Patrick Ciongoli
